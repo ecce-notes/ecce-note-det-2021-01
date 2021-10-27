@@ -1,12 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                                              %
-%      sPHENIX Technical Design Report at CD2 -- 2019          %
-%             open for writing 2019.02.01
-%             deadline to complete 2019.03.11
-%                                                              %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%  sPHENIX TDR Editor: John Haggerty (haggerty@bnl.gov)
 
                            
 \documentclass[12pt,twoside]{article}
@@ -41,7 +33,7 @@
 %\resetlinenumber
 
 \tableofcontents
-%\cleardoublepage
+\clearpage
 
 %\mainmatter
 
@@ -50,17 +42,29 @@
 %\setcounter{page}{1}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 2 Detector Overview
-\section {Detector Overview}
-\label{det_overview}
-\include{det_overview}
 
-\section {Section 2}
-\label{section2}
-\include{section2}
+
+\section {Overview}
+\label{overview}
+\input{overview} 
+%\include{overview}
+
+\section {Estimated In-Kind Value}
+\label{costing}
+\input{costing}
+
+\section {Magnetic Field Simulations}
+\label{simulations}
+\input{simulations}
+
+\section {dRICH performance in magnetic field}
+\label{dRICH}
+\input{dRICH_magfield}
 
 \listoftodos[To Do]
 
 \bibliographystyle{unsrturl}
 \bibliography{refs}
 
-\end{document}  %%%%%%%%%%%%%%%%% End Document
+\end{document}  
+%%%%%%%%%%%%%%%%% End Document

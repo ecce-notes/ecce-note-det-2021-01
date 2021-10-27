@@ -1,0 +1,50 @@
+In this section we estimate the value of the BaBar solenoid as an in-kind contribution to the ECCE experiment, as well as the estimated cost to replace the solenoid if for some reason the BaBar solenoid is unavailable at the time of ECCE construction. 
+
+\subsection{Magnet Cost Formulas}
+
+A useful set of formulas for estimating the cost of a magnet as a function of the stored energy are available in the form of two papers, published in 1993 and 2008 \cite{Green1993,Green2008}. The estimated cost grows as a power of the stored energy and are given in 1993 and 2007 dollars, respectively. These formulas can be combined with the CPI inflation calculator (https://www.bls.gov/data/inflation\_calculator.htm) to arrive at an estimated value of the BaBar solenoid in 2021 dollars. Note that the 1993 paper formula calculates the values in 1993 dollars, while the 2008 paper formula is in 2007 dollars. 
+
+The combined 1993 cost formula and inflation factor is: 
+
+\begin{equation}
+    C = 0.458 \times E(MJ)^{0.7} \times 1.91
+\end{equation}
+
+\noindent where $E(MJ)$ is the stored energy in MJ and the factor 1.91 is the inflation escalation to 2021 dollars. 
+
+The same calculation using the 2008 formula yields: 
+
+\begin{equation}
+    C = 0.92 \times E(MJ)^{0.6} \times 1.34
+    \label{eq:2008}
+\end{equation}
+
+With a stored energy of 27MJ, the estimated value in 2021 dollars of the BaBar solenoid using the 1993 formula is \$8.8M, while using the 2008 formula yields a value of \$8.9M. The two calculations are quite consistent with one another, yielding a value of the BaBar solenoid (to one significant figure) of \$9M. 
+
+
+\subsection{Estimated Costs for Variations on the BaBar Solenoid}
+
+The potential exists that the BaBar solenoid may not be available for use by ECCE at the time of ECCE construction, or that the cost of the refurbishment required may not be cost-effective. In this case it is possible that a new solenoid could be considered. Under these circumstances, the ECCE consortium could consider a higher magnetic field for the new solenoid. 
+If we assume the same dimensions as the BaBar solenoid, the stored energy scales like the square of the magnetic field. While the BaBar solenoid is rated for 27MJ of stored energy, for a 2.0T solenoid of the same dimensions the stored energy would be 48MJ.  A 2.5T solenoid of the same energy would have a stored energy of 75MJ. 
+
+Using the 2008 formula in Equation~\ref{eq:2008} and the stored energy calculated for the 2.0T and 2.5T field, the cost in 2021 dollars would \$12.6 and \$16.4M, respectively. The potential solenoid options are summarized in Table~\ref{tab:magoptions}. 
+
+Note that a larger magnetic field will also imply additional engineering and design considerations, such as the differential force in the magnet coils due to the asymmetric nature of the ECCE flux return.  These are discused in Section~\ref{simulations}. 
+
+\begin{table}[h!tbp]
+    \centering
+    \begin{tabular}{| c | c | c |}
+        \hline
+                         & Stored Energy (MJ) &  Cost/Value (2021\$) \\ [0.5ex]
+         \hline
+%         BaBar Solenoid (1.4T) & 27 & 8.9M \\
+         BaBar Solenoid (1.5T) & 27 & 8.9M \\       
+         New Solenoid (2.0T)   & 48 & 12.6M \\
+         New Solenoid (2.5T)   & 75 & 16.4 \\
+         \hline
+    \end{tabular}{}
+     \caption{Tabular listing of the stored energy and cost for several ECCE solenoid options.}
+    \label{tab:magoptions}
+\end{table}
+
+
