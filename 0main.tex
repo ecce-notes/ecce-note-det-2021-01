@@ -14,36 +14,36 @@
 %%%%%%%%%%%%%%%%%%  header  (packages, 
 \input{header}
 
-\begin{document}
-\linenumbers
-%\frontmatter
-\pagestyle{empty}
+\title{Notes on the use of the BaBar solenoid in ECCE}
+\input{author_list}
 
+\begin{document}
+\pagestyle{empty}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% title page
 \include{title_page}
 
-%\cleardoublepage
+\cleardoublepage
 \pagestyle{plain}
+\maketitle
+\pagenumbering{roman}
 
-%\setcounter{page}{1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\clearpage
-%\cleardoublepage
+%Input any summary or abstract
+%\section* {Executive Summary}
+\begin{abstract}
+\label{sec:ExecutiveSummary}
+\input{exec-summary}
+\end{abstract}
 
-%\resetlinenumber
-
+\clearpage
+\setcounter{tocdepth}{3}
 \tableofcontents
 \clearpage
-
-%\mainmatter
-
-\renewcommand{\thepage}{\arabic{page}}
-%\setcounter{chapter}{0}
-%\setcounter{page}{1}
+\pagenumbering{arabic}
+\setcounter{page}{1}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\input{exec-summary.tex}
-\clearpage
 
 \section {Overview}
 \label{overview}
